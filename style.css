@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+h1, h4, h3{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+h1{
+    margin-top: 30px;
+    font-size:40px;
+    margin-bottom: 15px;
+    color: #ffdb39;
+    font-weight: 700;
+    text-shadow:2px 2px #0eff1a;
+}
+h4{
+    font-size:20px;
+}
+h3{
+    color: #ffffff;
+}
+body{
+    width: 100vw;
+}
+.container {
+   min-height: 100vh;
+    background: linear-gradient(135deg, #0c0806, #837c1be8);
+    padding-top: 10px;
+}
+
+.todo-app {
+    width: 100vw;
+    max-width: 540px;
+    background: #d8d8d85b;
+    margin: 60px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    box-shadow: -2px 2px 15px #000000be;
+}
+@media (max-width: 440px){
+    .btn {
+        border: none;
+        outline: none;
+        padding: 12px 20px;
+        background: #cca700;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 40px;
+        box-shadow: -2px 2px 15px #0830049d;
+    }
+    h4{
+        font-size:15px;
+    }
+    .todo-app {
+        width: 100%;
+        max-width: 340px;
+        margin: 60px auto 20px;
+        padding: 40px 30px 70px;
+    
+    }
+}
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: transparent;
+    font-weight: 14px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #cca700;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    box-shadow: -2px 2px 15px #0830049d;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-image: url(circle.png);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    top: 11px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+ul li.checked::before {
+    background-image: url(tik.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    color: #555;
+}
+
+ul li span:hover {
+    background-color: #c4c4c4ef;
+    border-radius: 50%;
+}
